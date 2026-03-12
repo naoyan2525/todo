@@ -8,3 +8,12 @@
   <link rel="stylesheet" href="{{ asset('css/common.css') }}">
   @yield('css')
 </head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Todo</h1>
+  </header>
+  <main class="main">
+    @yield('content')
+  </main>
+</body>
