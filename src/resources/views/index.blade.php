@@ -20,7 +20,6 @@
             <button class="todo__form__submit" type="submit">作成</button>
         </div>
     </form>
-</div>
 
 <div class="todo__table">
     <table class="todo__table__list">
@@ -70,5 +69,6 @@
              </td>
         </tr>
     </table>
+</div>
 </div>
 @endsection

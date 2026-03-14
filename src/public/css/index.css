@@ -15,3 +15,19 @@
     font-weight: bold;
     font-size: 24px;
 }
+
+.todo__alert--success {
+    color: #106725;
+    font-size: 16px;
+    margin-bottom: 30px;
+    background-color: #7fe296;
+    padding: 10px;
+}
+
+.todo__content {
+    font-size: 16px;
+    padding: 10px;
+    width: 400px;
+    margin: 0 auto;
+}
+
