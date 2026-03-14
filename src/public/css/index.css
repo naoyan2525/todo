@@ -1,0 +1,17 @@
+.header {
+    background: #000;
+
+}
+
+.header__title {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}

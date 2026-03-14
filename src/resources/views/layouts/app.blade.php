@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
   <meta charset="UTF-8">
@@ -9,11 +11,18 @@
   @yield('css')
 </head>
 
+
 <body>
   <header class="header">
-    <h1 class="header__title">Todo</h1>
+    <div class="header__title">
+      <a class="header__logo" href="/">
+        Todo
+      </a>
+      </div>
   </header>
   <main class="main">
     @yield('content')
   </main>
 </body>
+
+</html>

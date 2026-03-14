@@ -12,3 +12,4 @@ class TodoController extends Controller
         return view('index');
     }
 }
+
