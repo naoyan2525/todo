@@ -26,10 +26,10 @@
 }
 
 .todo__alert--success {
-    color: #106725;
+    color: #0f5132;
     font-size: 16px;
     margin-bottom: 30px;
-    background-color: #7fe296;
+    background-color: #d1e7dd;
     padding: 10px;
 }
 
@@ -96,10 +96,19 @@
 
 }
 
+.todo__table__item {
+    padding: 12px;
+    width: 90%;
+}
+
 .update__form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.update__form__input {
+    border: none;
 }
 
 .update__form__item {
@@ -113,6 +122,32 @@
     border: none;
 }
 
+.update__form__button {
+    width: 50px;
+}
+
+.update__form__submit {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: #0000ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.delete__form__button {
+    width: 50px;
+}
 
 
+.delete__form__submit {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    background: #ff0000;
+    color: #fff;
+    cursor: pointer;
+}
 
