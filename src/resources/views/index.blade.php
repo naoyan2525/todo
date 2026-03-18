@@ -12,9 +12,10 @@
 </div>
 
 <div class="todo__content">
-    <form class="todo__form">
+    <form class="todo__form" action="/todos" method="post">
+        @csrf
         <div class="todo__form__item">
-            <input class="todo__form__input" type="text" name="title">
+            <input class="todo__form__input" type="text" name="content">
             </div>
         <div class="todo__form__button">
             <button class="todo__form__submit" type="submit">作成</button>
