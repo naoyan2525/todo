@@ -33,6 +33,13 @@
     padding: 10px;
 }
 
+.todo__alert--danger {
+    padding: 10px 0;
+    border-color: #f5c2c7;
+    background-color: #f8d7da;
+    color: #842029;
+}
+
 .todo__content {
     padding: 60px 15px;
     max-width: 1230px;
