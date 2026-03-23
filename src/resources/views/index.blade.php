@@ -54,7 +54,7 @@
             </select>
         </div>
 
-        <div class="seach-form__button">
+        <div class="search-form__button">
             <button class="search-form__button-submit" type="submit">検索</button>
         </div>
     </form>
@@ -74,7 +74,7 @@
                 <form class="update__form" action="/todos/update" method="POST">
                     @method('PATCH')
                     @csrf
-                    <div class="update__form__item">
+                    <div class="update-form__item">
                         <input class="update__form__input" type="text" name="content" value="{{ $todo['content'] }}">
                         <input type="hidden" name="id" value="{{ $todo['id'] }}">
                     </div>
