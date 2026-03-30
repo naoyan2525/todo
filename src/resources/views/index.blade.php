@@ -33,8 +33,11 @@
         <div class="todo__form__item">
             <input class="todo__form__input" type="text" name="content" value="{{ old('content') }}"
             />
-            <select class="create-form__item-select">
+            <select class="create-form__item-select" name="category_id">
                 <option value="">カテゴリ</option>
+                @foreach ($categories as $category)
+                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                @endforeach
             </select>
         </div>
         <div class="todo__form__button">
@@ -46,11 +49,15 @@
         <h2>Todo検索</h2>
     </div>
     
-    <form class="search-form">
+    <form class="search-form" action="/todos/search" method="get">
+        @csrf
         <div class="search-form__item">
-            <input class="search-form__item-input" type="text" />
-            <select class="search-form__item-select">
+            <input class="search-form__item-input" type="text" name="keyword" value="{{ old('keyword') }}">
+            <select class="search-form__item-select" name="category_id">
                 <option value="">カテゴリ</option>
+                @foreach ($categories as $category)
+                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                @endforeach
             </select>
         </div>
 
@@ -80,7 +87,7 @@
                     </div>
                     
                     <div class="update-form__item">
-                        <p class="update-form__item-p">Category 1</p>
+                        <p class="update-form__item-p">{{ $todo['category']['name'] }}</p>
                     </div>
 
                     <div class="update__form__button">
